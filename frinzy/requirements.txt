@@ -1,1 +1,2 @@
-python-dotenv
+Django==3.2.3
+Pillow==8.2.0

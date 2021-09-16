@@ -1,0 +1,37 @@
+{% extends 'resources/basic.html' %} {% block content %}
+
+<div class="container  my-4 blogp" id="courses">
+    <div class="row my-4">
+        <div class="col-12">
+            <h1 class="c">{{ course.title }}</h1>
+        </div>
+    </div>
+    <div class="row my-4">
+        <div class="col-12">
+            <h3 class="c">{{ course.subtitle }}</h3>
+        </div>
+    </div>
+    <div class="row my-5">
+        <div class="col-12 c">
+            <img src="{{ course.image.url }}" class="w"><br>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 c">
+            <p class="c px-5">{{ course.description|safe }}</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 c">
+            <a href="{{ course.url }} " target="_blank" class="btn btn-primary">Enroll</a>
+        </div>
+    </div>
+
+
+    <br>
+
+</div>
+
+{% endblock %}
